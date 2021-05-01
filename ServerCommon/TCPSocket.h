@@ -2,6 +2,7 @@
 
 #include "TypeSocket.h"
 #include "GrowingArray.hpp"
+#include "CircularArray.hpp"
 
 
 class TCPSocket
@@ -74,7 +75,7 @@ private:
 	int					_internalWritePointer;
 	unsigned int		_lastActivity;
 
-	CircularArray<int, MAX_INTERNAL_PACKETS>* _internalPackets;
+	CircularArrayT<int, MAX_INTERNAL_PACKETS>* _internalPackets;
 
 	static GrowingArray<TCPSocket*>		_activeSockets;
 	static unsigned int					_lastActiveSocketCheck;

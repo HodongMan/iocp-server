@@ -7,3 +7,5 @@
 
 
 #include <string>
+#include <process.h>
+#include <float.h>

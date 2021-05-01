@@ -30,5 +30,5 @@ public:
 	void				unlock( void ) noexcept;
 
 private:
-	volatile long		_lock
+	volatile long		_lock;
 };
